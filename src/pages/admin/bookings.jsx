@@ -85,9 +85,7 @@ export default function AdminBooking() {
                                     <td>
                                         {booking.note}
                                     </td>
-                                    <td>
-                                        {booking.note}
-                                    </td>
+                                    
 
                                 </tr>
                             )
