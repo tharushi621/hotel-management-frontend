@@ -9,8 +9,8 @@ export default function TestComponent(){
             <div className="bg-white w-[350px] h-[350px] flex justify-center items-center ">
                 <button className="w-[50px] h-[50px] bg-blue-700 rounded-full text-2xl text-white text-center"
                 onClick={()=>{
-                    num=num-1
-                    console.log(num)
+                   const newNum = num-1
+                   setNum(newNum)
                 }}>
                     -
                 </button>
@@ -19,7 +19,8 @@ export default function TestComponent(){
                 </span>
                 <button className="w-[50px] h-[50px] bg-blue-700 rounded-full text-2xl text-white text-center"
                 onClick={()=>{
-                    alert("Plus Button click")
+                    const newNum = num+1
+                    setNum(newNum)
                 }}
                 >
                     +
