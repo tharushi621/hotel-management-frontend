@@ -14,15 +14,15 @@ function handleLogin(){
     password:password
     }
 ).then((res)=>{
-    console.log(res.data)
+  
     localStorage.setItem("token", res.data.token)
     const token= localStorage.getItem("token")
-    console.log(token)
-    if(res.data.user.type=="admin"){
-        window.location.href="/admin"
-
-    }else{
+   
+    if(res.data.user.type=="customer"){
         window.location.href="/"
+
+    }else if(res.data.user.type=="admin"){
+        window.location.href="/admin"
     }
 }).catch((err)=>{
     console.log(err)

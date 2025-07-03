@@ -1,4 +1,5 @@
 import Header from "../../components/header/header"
+import Footer from "../../components/footer/footer"
 
 export default function HomePage(){
     return(
@@ -21,6 +22,7 @@ export default function HomePage(){
         </h1>
       </div>
     </div>
+    <Footer/>
     </>
     )
 }

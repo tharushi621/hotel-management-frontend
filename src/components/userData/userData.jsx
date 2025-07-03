@@ -1,8 +1,20 @@
+import axios from "axios";
+
 function UserData(props){
 
 const token = localStorage.getItem("token")
-if(token == null){
-    window.location.href="/login"
+
+if(token != null){
+    axios.get(import.meta.env.VITE_BE_URL+"/api/users/",
+        {
+            headers:{
+                Authorization:"Bearer "+token,
+                "Content-Type" :"application/json"
+            }
+                           }
+        ).then((res)=>{
+            console.log(res)
+        })
 }
 
     return(
