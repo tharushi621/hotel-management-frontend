@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header className='w-full bg-[#FFEAD8] flex h-[65px] relative items-center justify-between p-[10px]'>
+        <header className='w-full bg-[#b3bfdc] flex h-[65px] relative items-center justify-between p-[10px]'>
             {/* Left Section - Social Media Icons*/}
             <div className="flex items-center gap-7">
                 {/* Social Media Icons */}
@@ -60,34 +60,37 @@ function Header() {
             <div className="flex items-center gap-6">
                 {/* Navigation Links */}
                 <nav className="flex items-center gap-6">
-                    <a href="#about" className="text-[#000000] hover:text-[#9B177E] transition-colors duration-200 font-medium text-[16px]">
+                    <a href="#about" className="text-[#000000] hover:text-[#ffffff] transition-colors duration-200 font-medium text-[16px]">
                         About Us
                     </a>
                      {/* Vertical Line Separator */}
                 <div className="h-8 w-px bg-[#000000] opacity-50"></div>
                 
-                    <a href="#contact" className="text-[#000000] hover:text-[#9B177E] transition-colors duration-200 font-medium text-[16px]">
+                    <a href="#contact" className="text-[#000000] hover:text-[#ffffff] transition-colors duration-200 font-medium text-[16px]">
                         Contact
                     </a>
                      {/* Vertical Line Separator */}
                 <div className="h-8 w-px bg-[#000000] opacity-50"></div>
                 
-                    <a href="#news" className="text-[#000000] hover:text-[#9B177E] transition-colors duration-200 font-medium text-[16px]">
+                    <a href="#news" className="text-[#000000] hover:text-[#ffffff] transition-colors duration-200 font-medium text-[16px]">
                         News
                     </a>
                      {/* Vertical Line Separator */}
                 <div className="h-8 w-px bg-[#000000] opacity-50"></div>
                 
-                    <a href="mailto:info@leoninevilla.com" className="text-[#670D2F] hover:text-[#9B177E] transition-colors duration-200 font-medium text-[16px]">
-                        Email
-                    </a>
+                   <a href="mailto:info@leoninevilla.com" className="hover:opacity-80 transition-opacity duration-200">
+  <svg className="w-4 h-4 text-[#000000]" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v1.5l-10 6.25L2 5.5V4zm0 3.5v12a2 2 0 002 2h16a2 2 0 002-2v-12l-10 6.25L2 7.5z"/>
+  </svg>
+</a>
+
                      {/* Vertical Line Separator */}
                 <div className="h-8 w-px bg-[#000000] opacity-50"></div>
                 
                 </nav>
                 
                 {/* Book Now Button */}
-                <button className="bg-[#FFD700] hover:bg-[#FFC107] text-[#670D2F] font-bold px-6 py-2 rounded-lg transition-colors duration-200 text-[16px]">
+                <button className="bg-[#FFD700] hover:bg-[#FFC107] text-[#000000] font-bold px-6 py-2 rounded-lg transition-colors duration-200 text-[16px]">
                     BOOK NOW
                 </button>
             </div>
