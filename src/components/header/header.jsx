@@ -1,6 +1,6 @@
 function Header() {
     return (
-        <header className='w-full bg-[#b3bfdc] flex h-[65px] relative items-center justify-between p-[10px]'>
+        <header className='w-full bg-[#70c9e4] flex h-[65px] relative items-center justify-between p-[10px]'>
             {/* Left Section - Social Media Icons*/}
             <div className="flex items-center gap-7">
                 {/* Social Media Icons */}
